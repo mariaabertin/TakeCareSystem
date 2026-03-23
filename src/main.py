@@ -1,5 +1,3 @@
-from asyncio import timeout
-
 from classes import Sono, Treino, Alimentacao, Hidratacao, Leitura
 
 print("\n" + "-"*50)
@@ -27,23 +25,29 @@ leitura = Leitura(leuLivro, pagina)
 
 
 score = 0
-if horasSono.get_horasSono() >= 7: score += 20
+if horasSono.get_horasSono() >= 7:
+    score += 20
 else:
     porcentamemSono = hrSono/7
     score += porcentamemSono*20
 
-if fezExercicio.get_fezExercicio(): score += 20
+if fezExercicio.get_fezExercicio():
+    score += 20
 
-if notaAlimentacao.get_notaAlimentacao() >= 8: score += 20
+if notaAlimentacao.get_notaAlimentacao() >= 8:
+    score += 20
 else:
     porcentamemAli = notaAlimentacao.get_notaAlimentacao()/8
     score += porcentamemAli*20
 
-if qntAgua.get_qntAgua() >= 2: score += 20
+if qntAgua.get_qntAgua() >= 2:
+    score += 20
 
 
-if leitura.get_leuLivro(): score += 5
-if leitura.get_qntPag() >= 10: score += 15
+if leitura.get_leuLivro():
+    score += 5
+if leitura.get_qntPag() >= 10:
+    score += 15
 
 
 print("\n" + "-"*35)
@@ -51,10 +55,11 @@ print(f"Seu Score de Autocuidado hoje é: {score:.2f}%")
 
 if score >= 80:
     print("Parabéns, você está sendo sua prioridade!")
-elif 60<= score <= 79:
+elif 60 <= score <= 79:
     print("Tem dias turbulentos, mas você está no caminho! Se mantenha firme!")
 else:
-    print("Se priorizar é o primeiro passo para uma vida equilibrada e prazeroza!")
+    print("Se priorizar é o 1º passo para uma vida equilibrada e prazeroza!")
 
 print("\n" + "-"*35)
-print("Amanhã é um novo dia, perfeito para novas oportunidades, acredite em si mesmo!")
+print("Amanhã é um novo dia, perfeito para novas oportunidades.")
+print("Acredite em si mesmo!")

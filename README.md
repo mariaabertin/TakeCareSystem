@@ -1,6 +1,6 @@
 # TakeCareSystem
 
-**Status do Projeto:** v1.0.0 (Finalizado)
+**Status do Projeto:** v1.0.1 (Finalizado)
 
 Sistema: TakeCare
 
@@ -51,6 +51,6 @@ Para verificar a conformidade do código com as boas práticas da PEP 8:
    <br> flake8 src/
 
 ## Informações adicionais:
-Versão atual: 1.0.0
-Autora: Maria Clara Bertin
+Versão atual: 1.0.1 <br>
+Autora: Maria Clara Bertin <br>
 Link para repositório público: https://github.com/mariaabertin/TakeCareSystem

@@ -31,7 +31,7 @@ Público geral, estudantes e profissionais que buscam melhorar sua organização
 ## Instruções de Instalação
 1. Certifique-se de ter o Python 3.x instalado em sua máquina.
 2. Clone este repositório:
-   git clone [COLE_AQUI_O_LINK_DO_SEU_REPOSITORIO]
+   git clone https://github.com/mariaabertin/TakeCareSystem.git
 3. Acesse a pasta do projeto e instale as dependências necessárias:
    <br> pip install -r requirements.txt
 

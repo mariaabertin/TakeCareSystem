@@ -53,4 +53,4 @@ Para verificar a conformidade do código com as boas práticas da PEP 8:
 ## Informações adicionais:
 Versão atual: 1.0.0
 Autora: Maria Clara Bertin
-Link para repositório público: 
+Link para repositório público: https://github.com/mariaabertin/TakeCareSystem

@@ -33,22 +33,22 @@ Público geral, estudantes e profissionais que buscam melhorar sua organização
 2. Clone este repositório:
    git clone [COLE_AQUI_O_LINK_DO_SEU_REPOSITORIO]
 3. Acesse a pasta do projeto e instale as dependências necessárias:
-   pip install -r requirements.txt
+   <br> pip install -r requirements.txt
 
 ## Instruções de Execução:
 1. Para iniciar a aplicação via terminal, execute o seguinte comando na src do projeto:
-   python3 src/main.py
+   <br> python3 src/main.py
 
 ## Instruções para rodar os testes: 
 Para validar a lógica de negócio e garantir que os cálculos estão corretos:
 1. Certifique-se de estar na src do projeto.
 2. Execute o comando:
-   python3 -m pytest
+   <br> python3 -m pytest
 
 ## Instruções para rodar o lint: 
 Para verificar a conformidade do código com as boas práticas da PEP 8:
 1. Execute o comando:
-   flake8 src/
+   <br> flake8 src/
 
 ## Informações adicionais:
 Versão atual: 1.0.0

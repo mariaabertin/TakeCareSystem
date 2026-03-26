@@ -1,6 +1,6 @@
 # TakeCareSystem
 
-**Status do Projeto:** v1.0.1 (Finalizado)
+**Status do Projeto:** v1.0.0 (Finalizado)
 
 Sistema: TakeCare
 
@@ -28,26 +28,29 @@ Público geral, estudantes e profissionais que buscam melhorar sua organização
 - **Qualidade de Código:** Flake8 (Linting)
 - **CI/CD:** GitHub Actions
 
-Instruções de instalação:
+## Instruções de Instalação
+1. Certifique-se de ter o Python 3.x instalado em sua máquina.
+2. Clone este repositório:
+   git clone [COLE_AQUI_O_LINK_DO_SEU_REPOSITORIO]
+3. Acesse a pasta do projeto e instale as dependências necessárias:
+   pip install -r requirements.txt
 
-Instruções para rodar os testes: Abra o Pycharm com a pasta tests e rode o arquivo test_main.py;
+## Instruções de Execução:
+1. Para iniciar a aplicação via terminal, execute o seguinte comando na src do projeto:
+   python3 src/main.py
 
-Instruções para rodar o lint: Abra o Pycharm com a src, vá ao terminal no sistema e digite "flake8 ."
+## Instruções para rodar os testes: 
+Para validar a lógica de negócio e garantir que os cálculos estão corretos:
+1. Certifique-se de estar na src do projeto.
+2. Execute o comando:
+   python3 -m pytest
 
+## Instruções para rodar o lint: 
+Para verificar a conformidade do código com as boas práticas da PEP 8:
+1. Execute o comando:
+   flake8 src/
 
-Nome da autora: Maria Clara Bertin
+## Informações adicionais:
+Versão atual: 1.0.0
+Autora: Maria Clara Bertin
 Link para repositório público: 
-
-nome do projeto;
-descrição do problema real;
-proposta da solução;
-público-alvo;
-funcionalidades principais;
-tecnologias utilizadas;
-instruções de instalação;
-instruções de execução;
-instruções para rodar os testes;
-instruções para rodar o lint;
-versão atual;
-nome do autor;
-link do repositório público.

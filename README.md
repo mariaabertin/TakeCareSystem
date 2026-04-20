@@ -24,7 +24,7 @@ Público geral, estudantes e profissionais que buscam melhorar sua organização
 - **Integração com API de Clima:** Consumo em tempo real da API HG Brasil Weather para contextualizar as recomendações de saúde com o clima de Brasília.
 - **Dashboard Dinâmico:** Cálculo de Score de Autocuidado processado no Back-end e exibido em tempo real.
 - **Deploy Automatizado:** Hospedagem via Render com integração contínua (CI/CD).
-  ![Preview da Nova Interface](https://github.com/mariaabertin/TakeCareSystem/blob/main/interfacePreview.png)
+  ![Preview da Nova Interface](<img width:200px height:400px src="https://github.com/mariaabertin/TakeCareSystem/blob/main/interfacePreview.png">)
 
 ---
 

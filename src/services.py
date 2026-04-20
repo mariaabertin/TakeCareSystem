@@ -4,7 +4,8 @@ import requests
 def buscarClima(cidade="Brasilia"):
     try:
         # Usando a HG Brasil Weather
-        url = f"https://api.hgbrasil.com/weather?format=json&city_name={cidade}"
+        base_url = "https://api.hgbrasil.com/weather?format=json"
+        url = f"{base_url}&city_name={cidade}"
         resposta = requests.get(url)
         dados = resposta.json()
 

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TakeCare</title>
+    <style>
+        body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f0f7f4;
+        color: #4B3621;
+        padding: 20px; }
+
+        .container {
+        background: #FDF5E6;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+
+        .titulo {
+        text-align: center;
+        background: #FDF5E6;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+
+        .clima { background: #DAA520;
+        padding: 15px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+        font-weight: bold; }
+
+        .campo {
+        text-align: left;
+        margin-bottom: 15px;}
+
+        label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 600; }
+
+        input[type="number"], input[type="text"] {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #FADBB1;
+        border-radius: 8px;
+        background: #FFF2E2}
+
+        .radio-group {
+        margin: 10px 0; }
+
+        button {
+        background: #6B8E23;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold; }
+
+        button:hover { background: #A3B18A; }
+
+        .resultado {
+        margin-top: 30px;
+        padding: 20px;
+        border-radius: 12px;
+        background: #CCD5AE;
+        border: 2px solid #6B8E23; }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <h1>🧘‍♀️TakeCare</h1>
+
+        {% if clima %}
+        <div class="clima">
+            📍 Brasília: {{ clima.temp }}°C - {{ clima.condicao }}
+        </div>
+        {% endif %}
+
+        <form method="POST">
+            <div class="campo">
+                <label>Horas de sono:</label>
+                <input type="number" step="0.1" name="horas" required>
+            </div>
+
+            <div class="campo">
+                <label>Fez exercício hoje?</label>
+                <input type="radio" name="treino" value="s" required> Sim
+                <input type="radio" name="treino" value="n"> Não
+            </div>
+
+            <div class="campo">
+                <label>Nota da alimentação (0-10):</label>
+                <input type="number" step="0.1" name="nota" required>
+            </div>
+
+            <div class="campo">
+                <label>Bebeu quantos litros de água?</label>
+                <input type="number" step="0.1" name="agua" required>
+            </div>
+
+            <div class="campo">
+                <label>Leu algum livro hoje?</label>
+                <input type="radio" name="leitura" value="s" required> Sim
+                <input type="radio" name="leitura" value="n"> Não
+            </div>
+
+            <div class="campo">
+                <label>Quantas páginas leu?</label>
+                <input type="number" name="paginas" value="0">
+            </div>
+
+            <button type="submit">Calcular Bem-Estar</button>
+        </form>
+
+        {% if exibir %}
+        <div class="resultado">
+            <h2>Seu Score: {{ "%.2f"|format(score) }}%</h2>
+            <p>
+                {% if score >= 80 %} Parabéns, você está sendo sua prioridade!
+                {% elif score >= 60 %} Tem dias turbulentos, mas você está no caminho!
+                {% else %} Se priorizar é o 1º passo para uma vida equilibrada!
+                {% endif %}
+            </p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

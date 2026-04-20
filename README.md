@@ -1,7 +1,7 @@
 # TakeCareSystem
 
 **Status do Projeto:** v2.0.0 
-> 🌍 **Acesse o App Online:** [TakeCare](https://takecaresystem.onrender.com)  
+> 🌍 **Acesse o Sistema Publicado:** [TakeCare](https://takecaresystem.onrender.com)  
 *(Nota: Por estar em um servidor gratuito, o primeiro acesso pode levar cerca de 1 minuto para carregar).*
 
 ---

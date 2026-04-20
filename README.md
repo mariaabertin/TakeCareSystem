@@ -42,14 +42,19 @@ Público geral, estudantes e profissionais que buscam melhorar sua organização
    <br> pip install -r requirements.txt
 
 ## Instruções de Execução:
-1. Para iniciar a aplicação via terminal, execute o seguinte comando na src do projeto:
-   <br> python3 src/main.py
+Para iniciar a interface Web (Flask)
+1. Execute o seguinte comando na raiz do projeto:
+   python app.py (Após isso, acesse http://127.0.0.1:5000 no seu navegador).
+
+Para iniciar a aplicação via terminal (versão legado), 
+1. Execute:
+   python src/main.py
 
 ## Instruções para rodar os testes: 
-Para validar a lógica de negócio e garantir que os cálculos estão corretos:
-1. Certifique-se de estar na src do projeto.
+Para validar a lógica de negócio e os novos testes de integração com a API de clima:
+1. Certifique-se de estar na raiz do projeto.
 2. Execute o comando:
-   <br> python3 -m pytest
+   python -m pytest
 
 ## Instruções para rodar o lint: 
 Para verificar a conformidade do código com as boas práticas da PEP 8:

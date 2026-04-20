@@ -1,9 +1,17 @@
 from classes import Sono, Treino, Alimentacao, Hidratacao, Leitura
+from services import buscarClima
 
-print("\n" + "-"*50)
+clima = buscarClima("Brasilia")
+if clima:
+    print("\n---------- Atenção Diária: ----------")
+    print(f"Clima em Brasília: {clima['temp']}°C e {clima['condicao']}")
+    if clima['temp'] > 28:
+        print("Está calor! A meta de hidratação hoje é essencial!")
+
+print("\n" + "-"*64)
 print("Seja bem-vindo(a) ao TakeCare!")
 print("Onde o objetivo é o autocuidado e a manutenção do seu bem estar!")
-print("-"*50)
+print("-"*64)
 
 
 hrSono = float(input("Quantas horas você dormiu? "))

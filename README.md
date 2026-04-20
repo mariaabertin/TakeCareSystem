@@ -16,8 +16,6 @@ A TakeCare surge como uma ferramenta objetiva para reter atenção pessoal e aut
 ## Público-alvo
 Público geral, estudantes e profissionais que buscam melhorar sua organização pessoal e saúde mental.
 
---
-
 ## Novidades da Versão 2.0.0 (Etapa Intermediária)
 - **Interface Web:** Desenvolvida com Flask, HTML5 e CSS3 personalizado.
 - **Estética Cozy:** Design focado em bem-estar com paleta de cores terrosas (Terracota, Sálvia e Creme).

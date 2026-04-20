@@ -1,7 +1,10 @@
 # TakeCareSystem
 
-**Status do Projeto:** v1.0.1 (Finalizado)
+**Status do Projeto:** v2.0.0 
+> 🌍 **Acesse o App Online:** [https://takecare-system.onrender.com](https://takecare-system.onrender.com)  
+*(Nota: Por estar em um servidor gratuito, o primeiro acesso pode levar cerca de 1 minuto para carregar).*
 
+---
 Sistema: TakeCare
 
 ## Descrição do Problema Real
@@ -13,20 +16,23 @@ A TakeCare surge como uma ferramenta objetiva para reter atenção pessoal e aut
 ## Público-alvo
 Público geral, estudantes e profissionais que buscam melhorar sua organização pessoal e saúde mental.
 
-## Funcionalidades Principais
-- Registro de horas de sono;
-- Check-in de realização de exercícios físicos;
-- Avaliação qualitativa da alimentação (nota 0-10);
-- Monitoramento de volume de hidratação (litros);
-- Registro de hábito de leitura (confirmação e quantidade de páginas);
-- Cálculo automático de **Score de Autocuidado** com lógica de proporcionalidade.
+--
+
+## Novidades da Versão 2.0.0 (Etapa Intermediária)
+- **Interface Web:** Desenvolvida com Flask, HTML5 e CSS3 personalizado.
+- **Estética Cozy:** Design focado em bem-estar com paleta de cores terrosas (Terracota, Sálvia e Creme).
+- **Integração com API de Clima:** Consumo em tempo real da API HG Brasil Weather para contextualizar as recomendações de saúde com o clima de Brasília.
+- **Dashboard Dinâmico:** Cálculo de Score de Autocuidado processado no Back-end e exibido em tempo real.
+- **Deploy Automatizado:** Hospedagem via Render com integração contínua (CI/CD).
 
 ## Tecnologias Utilizadas
 - **Linguagem:** Python 3.12
-- **IDE:** PyCharm / VS Code
-- **Testes:** Pytest
-- **Qualidade de Código:** Flake8 (Linting)
-- **CI/CD:** GitHub Actions
+- **Web Framework:** Flask
+- **Integração:** Requests (Consumo de API REST)
+- **Servidor de Produção:** Gunicorn
+- **Testes:** Pytest (Testes de unidade e integração)
+- **Qualidade de Código:** Flake8 (Linting/PEP 8)
+- **CI/CD:** GitHub Actions (Build e testes automáticos a cada Push/PR)
 
 ## Instruções de Instalação
 1. Certifique-se de ter o Python 3.x instalado em sua máquina.
@@ -51,6 +57,8 @@ Para verificar a conformidade do código com as boas práticas da PEP 8:
    <br> flake8 src/
 
 ## Informações adicionais:
-Versão atual: 1.0.1 <br>
+Versão atual: 2.0.0 <br>
 Autora: Maria Clara Bertin <br>
 Link para repositório público: https://github.com/mariaabertin/TakeCareSystem
+
+>Este projeto faz parte da disciplina de BootcampII da graduação em Engenharia de Software e segue os padrões de Clean Code e Gestão de Versão.
